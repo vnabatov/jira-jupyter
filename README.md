@@ -1,9 +1,9 @@
 Fun with Jupyter Notebooks and JIRA
 =====
+Pre-requirements: docker
 
 ```
-pyenv virtualenv 3.6.3 jira
-pyenv activate jira
-pip install -r requirements.txt
-jupyter notebook
+docker run -p 8888:8888 jupyter/scipy-notebook:33add21fab64
+open the link from the docker console (127.0.0.1:8888)
+upload requirements.txt and jira.ipynb 
 ```
